@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c036272a-2cfe-4275-84b6-6f6bdf262d3f" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../boot_travel_platform\exportToHTML" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../java/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dDMGymLrNiAwK9jOupc2B6jC2v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.data.extractors.current.id" value="Excel (xlsx)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\money\几个学生\酒店景点\1\boot_travel_platform\src\main\resources\templates\system\attractions" />
+      <recent name="D:\money\几个学生\酒店景点\1\boot_travel_platform\src\main\resources\templates\system\hotel" />
+      <recent name="D:\money\几个学生\酒店景点\1\boot_travel_platform\src\main\java\hue\edu\xiong\volunteer_travel\util" />
+      <recent name="C:\Users\111\Desktop\壁纸大全\IDEA\爱游人旅游网站服务平台\源码\boot_travel_platform\src\main\java\hue\edu\xiong\volunteer_travel\core" />
+      <recent name="C:\Users\111\Desktop\壁纸大全\IDEA\爱游人旅游网站服务平台\源码\boot_travel_platform\src\main\java\hue\edu\xiong\volunteer_travel\util" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.VolunteerTravelApplication">
+    <configuration name="VolunteerTravelApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boot_travel_platform" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hue.edu.xiong.volunteer_travel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hue.edu.xiong.volunteer_travel" />
+      <option name="MAIN_CLASS_NAME" value="hue.edu.xiong.volunteer_travel.VolunteerTravelApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="volunteer_travel []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="VolunteerTravelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot_travel_platform" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hue.edu.xiong.volunteer_travel.VolunteerTravelApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="未命名" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.96" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="未命名_volunteer_travel" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="javadebug" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.VolunteerTravelApplicationTests.contextLoads" />
+      <item itemvalue="Maven.volunteer_travel []" />
+      <item itemvalue="Spring Boot.VolunteerTravelApplication" />
+      <item itemvalue="Tomcat Server.未命名" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.VolunteerTravelApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\111\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c036272a-2cfe-4275-84b6-6f6bdf262d3f" name="默认的" comment="" />
+      <created>1591955123836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591955123836</updated>
+      <workItem from="1591955167351" duration="46000" />
+      <workItem from="1591955235343" duration="1279000" />
+      <workItem from="1591962915374" duration="5371000" />
+      <workItem from="1591972054456" duration="2504000" />
+      <workItem from="1592011094674" duration="6042000" />
+      <workItem from="1592135116810" duration="7662000" />
+      <workItem from="1593396300320" duration="296000" />
+      <workItem from="1593498345812" duration="51000" />
+      <workItem from="1594464747590" duration="4387000" />
+      <workItem from="1594523461578" duration="6393000" />
+      <workItem from="1639197781426" duration="20607000" />
+      <workItem from="1639928729660" duration="8833000" />
+      <workItem from="1639991164025" duration="4080000" />
+      <workItem from="1640165053689" duration="4140000" />
+      <workItem from="1640353691211" duration="4922000" />
+      <workItem from="1640491242991" duration="17603000" />
+      <workItem from="1640522640214" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1640507617489">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1640507617489" />
+    <state x="320" y="249" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1639976143222">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="320" y="249" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1639976143222" />
+    <state width="761" height="453" key="DebuggerActiveHint" timestamp="1640509191767">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="761" height="453" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1640509191767" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1640507923354">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1640507923354" />
+    <state width="1323" height="77" key="GridCell.Tab.0.bottom" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.0.center" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.0.left" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.0.right" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.1.bottom" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.1.center" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.1.left" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.1.right" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.2.bottom" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.2.center" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.2.left" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state width="1323" height="77" key="GridCell.Tab.2.right" timestamp="1640514320503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="77" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1640514320503" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1640354190194">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1640354190194" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1640493460108">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1640493460108" />
+    <state x="338" y="0" width="598" height="728" key="find.popup" timestamp="1640508477485">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="338" y="0" width="598" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1640508477485" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1640502626302">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1640502626302" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/hue/edu/xiong/volunteer_travel/controller/SystemController.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/hue/edu/xiong/volunteer_travel/controller/SystemController.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="org.springframework.data.domain.Sort" fieldName="orders" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
