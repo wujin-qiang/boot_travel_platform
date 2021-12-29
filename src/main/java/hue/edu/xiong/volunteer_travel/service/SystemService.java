@@ -96,9 +96,53 @@ public class SystemService {
         return userHotelPage;
     }
 
-    public Page<UserAttractions> getUserAttractionsPage(Pageable pageable) {
-        Page<UserAttractions> userAttractionsPage = userAttractionsRepository.findAll((root, query, cb) -> {
+    public Page<UserHotel> getUserHotelPage(Pageable pageable, UserHotel userHotel) {
+
+        Page<UserHotel> userHotelPage = userHotelRepository.findAll((root, query, cb) -> {
+
             List<Predicate> predicates = new ArrayList<>();
+            if (userHotel!=null){
+                if (userHotel.getDescribe() != "" && userHotel.getDescribe() != null) {
+                    User user = userRepository.findUserByName(userHotel.getDescribe());
+                    //攻略name模糊查询
+                    predicates.add((cb.equal(root.get("user"), user)));
+                }
+                //攻略name模糊查询
+                if (!StringUtils.isEmpty(userHotel.getBegindate())) {
+                    predicates.add(cb.greaterThanOrEqualTo(root.get("begindate").as(String.class), userHotel.getBegindate()));
+                }
+                if (!StringUtils.isEmpty(userHotel.getEnddate())) {
+                    predicates.add(cb.lessThanOrEqualTo(root.get("enddate").as(String.class), userHotel.getEnddate()));
+                }
+            }
+
+            query.where(predicates.toArray(new Predicate[]{}));
+            query.orderBy(cb.desc(root.get("id")));
+            return null;
+        }, pageable);
+        return userHotelPage;
+    }
+
+    public Page<UserAttractions> getUserAttractionsPage(Pageable pageable, UserAttractions userAttractions) {
+
+        Page<UserAttractions> userAttractionsPage = userAttractionsRepository.findAll((root, query, cb) -> {
+
+            List<Predicate> predicates = new ArrayList<>();
+            if (userAttractions!=null){
+                if (userAttractions.getDescribe() != "" && userAttractions.getDescribe() != null) {
+                    User user = userRepository.findUserByName(userAttractions.getDescribe());
+                    //攻略name模糊查询
+                    predicates.add((cb.equal(root.get("user"), user)));
+                }
+                //攻略name模糊查询
+                if (!StringUtils.isEmpty(userAttractions.getBegindate())) {
+                    predicates.add(cb.greaterThanOrEqualTo(root.get("begindate").as(String.class), userAttractions.getBegindate()));
+                }
+                if (!StringUtils.isEmpty(userAttractions.getEnddate())) {
+                    predicates.add(cb.lessThanOrEqualTo(root.get("enddate").as(String.class), userAttractions.getEnddate()));
+                }
+            }
+
             query.where(predicates.toArray(new Predicate[]{}));
             query.orderBy(cb.desc(root.get("id")));
             return null;
@@ -116,8 +160,6 @@ public class SystemService {
         userAttractionsPage.getContent();
         return userAttractionsPage;
     }
-
-
 
 
     @Transactional(rollbackFor = Exception.class)
@@ -314,7 +356,7 @@ public class SystemService {
 
 
     @Transactional(rollbackFor = Exception.class)
-    public Result saveTravelStrategy(HttpServletRequest request,TravelStrategy travelStrategy) {
+    public Result saveTravelStrategy(HttpServletRequest request, TravelStrategy travelStrategy) {
 
         if (StringUtils.isEmpty(travelStrategy.getId())) {//没有id的情况
             travelStrategy.setId(IdGenerator.id());

@@ -5,9 +5,22 @@
 
     <div class="container" style="width: 1400px">
         <h1>酒店预订管理</h1>
-            <form name="search-form" class="form-inline m-b-10 clearfix" th:action="@{/system/hotelListUI}"
-                  id="search-form">
-            </form>
+        <form name="search-form"  class="form-inline m-b-10 clearfix" th:action="@{/system/hotelOrderListUI}"
+              id="search-form">
+            <div class="news-detail-box">
+                <div class="news-detail-content">
+                    <div align="left" style="float:left">
+                        <label class="control-label">预订时间</label>
+                        <input id="begindate"  type="date" name="begindate"  value="" min="2021-09-16" max="2099-09-26"/>
+                        <label class="control-label">结束时间</label>
+                        <input id="enddate"  type="date" name="enddate"  value="" min="2021-09-16" max="2099-09-26"/>
+                        <label class="control-label">用户姓名</label>
+                        <input id="name"  type="text" name="describe"/>
+                        <button type="submit" class="button">查询</button>
+                    </div>
+                </div>
+            </div>
+        </form>
 
             <div class="col-md-12 column">
                 <table class="table table-hover table-condensed">

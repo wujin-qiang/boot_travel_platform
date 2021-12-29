@@ -13,10 +13,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -36,12 +36,13 @@ public class SystemController {
     @ResponseBody
     public Result login(SysUser sysUser, HttpServletResponse response) {
 
-       return systemService.login(sysUser,response);
+        return systemService.login(sysUser, response);
     }
+
     @RequestMapping("/userListUI")
     public String userListUI(Model model, @PageableDefault(size = 10) Pageable pageable) {
         Page<User> page = systemService.getUserPage(pageable);
-        model.addAttribute("page",page);
+        model.addAttribute("page", page);
         return "system/user/list";
     }
 
@@ -58,10 +59,9 @@ public class SystemController {
     }
 
 
-
     @RequestMapping("/logout")
     public String logout(HttpServletRequest request, HttpServletResponse response) {
-       systemService.logout(request,response);
+        systemService.logout(request, response);
         return "redirect:/system";
     }
 
@@ -72,47 +72,30 @@ public class SystemController {
         return "system/hotel/list";
     }
 
+//    @RequestMapping("/hotelOrderListUI")
+//    public String hotelOrderListUI(Model model, @PageableDefault(size = 10) Pageable pageable) {
+//        Page<UserHotel> page = systemService.getUserHotelPage(pageable);
+//        model.addAttribute("page", page);
+//        return "system/hotel/hotelorderlist";
+//    }
+
     @RequestMapping("/hotelOrderListUI")
-    public String hotelOrderListUI(Model model, @PageableDefault(size = 10) Pageable pageable) {
-        Page<UserHotel> page = systemService.getUserHotelPage(pageable);
-        model.addAttribute("page",page);
-        return "system/hotel/hotelorderlist";
+    public ModelAndView hotelOrderListUI(Model model,UserHotel userHotel, @PageableDefault(size = 10) Pageable pageable) {
+        ModelAndView mv = new ModelAndView();
+        Page<UserHotel> page = systemService.getUserHotelPage(pageable, userHotel);
+        mv.addObject("page", page);
+        mv.setViewName("system/hotel/hotelorderlist");
+        return mv;
     }
 
     @RequestMapping("/attractionsOrderListUI")
-    public String attractionsOrderListUI(Model model, @PageableDefault(size = 10) Pageable pageable) {
-        Page<UserAttractions> page = systemService.getUserAttractionsPage(pageable);
-        model.addAttribute("page",page);
-        return "system/attractions/attractionsorderlist";
+    public ModelAndView attractionsOrderListUI(Model model, UserAttractions userAttractions, @PageableDefault(size = 10) Pageable pageable) {
+        ModelAndView mv = new ModelAndView();
+        Page<UserAttractions> page = systemService.getUserAttractionsPage(pageable, userAttractions);
+        mv.addObject("page", page);
+        mv.setViewName("system/attractions/attractionsorderlist");
+        return mv;
     }
-
-
-    @RequestMapping("/attractionsOrderListSelectUI")
-    public String attractionsOrderListSelectUI(Model model, UserAttractions userAttractions, @PageableDefault(size = 10) Pageable pageable) {
-        Page<UserAttractions> page = systemService.getUserAttractionsPage(pageable);
-        if(userAttractions.getDescribe()==null&&userAttractions.getBegindate()==null&&userAttractions.getEnddate()==null){
-            model.addAttribute("page",page);
-        }
-        if(userAttractions.getDescribe()!=null){
-            List<UserAttractions> list = page.getContent();
-            for (UserAttractions userAttraction: list) {
-                if(!userAttractions.getDescribe().equals(userAttraction.getUser().getName())){
-                    page.getContent().remove(userAttraction);
-                }else{
-                    if(userAttractions.getBegindate()!=null||userAttractions.getEnddate()!=null){
-                        if (VeDate.strToDate(userAttractions.getBegindate()).getTime()>VeDate.strToDate(userAttraction.getEnddate()).getTime()
-                                ||VeDate.strToDate(userAttractions.getEnddate()).getTime()>VeDate.strToDate(userAttraction.getBegindate()).getTime()){
-                            page.getContent().remove(userAttraction);
-                        }
-                    }
-                }
-            }
-        }
-        model.addAttribute("page",page);
-        return "system/attractions/attractionsorderlist";
-    }
-
-
 
     @RequestMapping("/saveHotel")
     @ResponseBody
@@ -203,7 +186,7 @@ public class SystemController {
 
     @RequestMapping("/saveTravelStrategy")
     @ResponseBody
-    public Result saveTravelStrategy(HttpServletRequest request,TravelStrategy travelStrategy) {
-        return systemService.saveTravelStrategy(request,travelStrategy);
+    public Result saveTravelStrategy(HttpServletRequest request, TravelStrategy travelStrategy) {
+        return systemService.saveTravelStrategy(request, travelStrategy);
     }
 }
